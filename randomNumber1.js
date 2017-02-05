@@ -11,3 +11,10 @@ if(parseInt(guess) === randomNumber){
 
 
 // Version 2
+var input1 = prompt("Please enter a lower/starting number");
+var bottomNum = parseInt(input1);
+var input2 = prompt("Please type an higher/ending number");
+var topNum = parseInt(input2);
+// Create a random number that is between 0 and the difference between the bottom and top range, plus 1
+var randomNum = Math.floor(Math.random() * (topNum - bottomNum + 1)) + bottomNum;
+var message = alert(randomNum + " is a number between " +bottomNum +" and " +topNum);
