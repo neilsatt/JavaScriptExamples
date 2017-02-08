@@ -49,3 +49,18 @@ while(true) {
         }
     }
 }
+
+// Two-dimensional Arrays
+var grades = [
+    [70, 95, 68, 89],
+    [80, 75, 78, 86],
+    [90, 85, 64, 99]   
+];
+
+// 1st student = grades[0]
+// 2nd student = grades[1]
+// 3rd student = grades[2]
+// get last score from 1st student - grades[0][3]
+// get first score from 3rd student - grades[2][0]
+
+
