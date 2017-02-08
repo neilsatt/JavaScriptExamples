@@ -1,10 +1,10 @@
 /*  Create a quiz with a two-dimensional array
     Two dimensional array keeps track of questions and answers
     Use a loop to cycle through questions and check answers
-    User prompt to ask question
+    User prompt to ask questions
     Use conditional statement to check answers
     Keep track of many questions were answered correctly
-    Alert out the answers
+    Alert the answers
 */
 
 var questions = [
