@@ -6,7 +6,6 @@
     Keep track of many questions were answered correctly
     Alert the answers
 */
-
 var questions = [
     ['How many states are in the US?',50],
     ['How many continents are there?', 7],
@@ -15,6 +14,9 @@ var questions = [
 var correctAnswers = 0;
 var answer;
 var response;
+// Create 2 new arrays to keep track of correct answers and wrong answers
+var correct = [];
+var wrong = [];
 
 for(i=0; i <questions.length; i++){
     question = questions[i][0];// question is first in two-dimensional array
@@ -24,7 +26,28 @@ for(i=0; i <questions.length; i++){
     // check if response matches answer
     if (response === answer){
         correctAnswers +=1;
+        correct.push(question); // answer to array
+        
+    } else {
+        wrong.push(question);
+    } 
+}
+
+alert("Number of correct answers: "+correctAnswers);
+
+// output a list of answers
+function buildList(arr) {
+    for (var i = 0; i < arr.length; i++){
+    if(arr === correct){
+     alert("Correct Answers: "+arr[i]);
+    } else {
+        alert("Incorrect Answers: "+arr[i]);
+        }
     }
 }
 
-alert("Correct answers: "+correctAnswers);
+buildList(correct);
+buildList(wrong);
+
+
+
