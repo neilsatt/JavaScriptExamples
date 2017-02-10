@@ -1,16 +1,7 @@
 var questions = [
-    {
-    question: 'How many states are in the US?',
-    answer: 50
-    },
-    {
-    question: 'How many continents are there?',
-    answer:7
-    },
-    {
-    question: 'How many oceans are there?',
-    answer: 5
-    } 
+    { question: 'How many states are in the US?', answer: 50},
+    { question: 'How many continents are there?', answer:7 },
+    { question: 'How many oceans are there?', answer: 5 } 
 ];
 var correctAnswers = 0;
 var answer;

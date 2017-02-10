@@ -31,3 +31,5 @@ for( var key in person) {
 for( var key in person) {
     console.log(key, ': ', person[key]); // logs out keys and values, again you can't use dot notation
 }
+
+
